@@ -13,9 +13,17 @@ import javax.swing.JOptionPane;
 public class menuEjercicios {
 
     private Nivel1 nivel1;
+    private Nivel2 nivel2;
+    private Nivel3 nivel3;
+    private Nivel4 nivel4;
+    private Nivel5 nivel5;
 
     public menuEjercicios() {
         nivel1 = new Nivel1();
+        nivel2 = new Nivel2 ();
+        nivel3 = new Nivel3 ();
+        nivel4 = new Nivel4 ();
+        nivel5 = new Nivel5 ();
         menuGlobal();
     }
 

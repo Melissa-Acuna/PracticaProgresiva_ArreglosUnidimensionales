@@ -9,7 +9,7 @@ package main;
  * @author Melissa Acuña
  * Edith
  */
-public class Nivel1 {
+public class Nivel1 { //FUNDAMENTOS
     
     public void Basico1 (){ /*Básico double Crear un arreglo de 4 números decimales inicializado con valores literales.
                                 Mostrar la longitud del arreglo y el último elemento.
