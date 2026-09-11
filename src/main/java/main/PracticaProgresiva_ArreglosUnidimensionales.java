@@ -12,6 +12,6 @@ package main;
 public class PracticaProgresiva_ArreglosUnidimensionales {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        menuEjercicios practica = new menuEjercicios();
     }
 }
