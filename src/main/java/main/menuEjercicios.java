@@ -120,12 +120,16 @@ public class menuEjercicios {
                                 + "\n5. Regresar al menu principal"));
                         switch (optLVL4) {
                             case 1:
+                                nivel1.Basico1();
                                 break;
                             case 2:
+                                nivel1.Basico2();
                                 break;
                             case 3:
+                                nivel1.Basico3();
                                 break;
                             case 4:
+                                nivel1.Basico4();
                                 break;
                             case 5:
                                 JOptionPane.showMessageDialog(null, "REGRESANDO AL MENÚ PRINCIPAL");
