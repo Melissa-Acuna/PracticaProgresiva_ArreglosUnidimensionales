@@ -7,7 +7,7 @@ package main;
 /**
  *
  * @author Melissa Acuña
- * Edith
+ * Edith Torres
  */
 public class Nivel5 { //INTEGRACIÓN Y RETOS
     

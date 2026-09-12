@@ -8,7 +8,8 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Melissa Acuña Edith
+ * @author Melissa Acuña 
+ * Edith Torres
  */
 public class menuEjercicios {
 
@@ -20,10 +21,10 @@ public class menuEjercicios {
 
     public menuEjercicios() {
         nivel1 = new Nivel1();
-        nivel2 = new Nivel2 ();
-        nivel3 = new Nivel3 ();
-        nivel4 = new Nivel4 ();
-        nivel5 = new Nivel5 ();
+        nivel2 = new Nivel2();
+        nivel3 = new Nivel3();
+        nivel4 = new Nivel4();
+        nivel5 = new Nivel5();
         menuGlobal();
     }
 
@@ -54,8 +55,10 @@ public class menuEjercicios {
                             case 2:
                                 break;
                             case 3:
+                                nivel1.Basico3();
                                 break;
                             case 4:
+                                nivel1.Basico4();
                                 break;
                             case 5:
                                 JOptionPane.showMessageDialog(null, "REGRESANDO AL MENÚ PRINCIPAL");
@@ -80,8 +83,10 @@ public class menuEjercicios {
                             case 2:
                                 break;
                             case 3:
+                                nivel2.BasicoIntermedio3();
                                 break;
                             case 4:
+                                nivel2.BasicoIntermedio4();
                                 break;
                             case 5:
                                 JOptionPane.showMessageDialog(null, "REGRESANDO AL MENÚ PRINCIPAL");
@@ -106,8 +111,10 @@ public class menuEjercicios {
                             case 2:
                                 break;
                             case 3:
+                                nivel3.Intermedio3();
                                 break;
                             case 4:
+                                nivel3.Intermedio4();
                                 break;
                             case 5:
                                 JOptionPane.showMessageDialog(null, "REGRESANDO AL MENÚ PRINCIPAL");
@@ -128,16 +135,16 @@ public class menuEjercicios {
                                 + "\n5. Regresar al menu principal"));
                         switch (optLVL4) {
                             case 1:
-                                nivel1.Basico1();
+
                                 break;
                             case 2:
-                                nivel1.Basico2();
+
                                 break;
                             case 3:
-                                nivel1.Basico3();
+
                                 break;
                             case 4:
-                                nivel1.Basico4();
+
                                 break;
                             case 5:
                                 JOptionPane.showMessageDialog(null, "REGRESANDO AL MENÚ PRINCIPAL");
