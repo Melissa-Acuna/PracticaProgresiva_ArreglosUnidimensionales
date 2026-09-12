@@ -17,14 +17,18 @@ public class Nivel1 { //FUNDAMENTOS
         /*Básico double Crear un arreglo de 4 números decimales inicializado con valores literales.
                                 Mostrar la longitud del arreglo y el último elemento.
                                 Inicialización literal, length*/
-
+        double [] numDecimales ={2.5, 3.4, 4.6, 5.2};
+        JOptionPane.showMessageDialog(null, "Longitud: "+numDecimales.length+" El ultimo elemento es: "+numDecimales [3]);
     }
 
     public void Basico2() {
         /*Básico boolean Crear un arreglo de 6 valores booleanos. Mostrar el valor almacenado en cada
                                 posición usando un ciclo for.
                                 boolean[], recorrido con for*/
-
+        boolean [] valores = {true, false, false, true, false, true};
+        for (int i=0; i<valores.length; i++) {
+            JOptionPane.showMessageDialog(null, "Posición "+i+ "\nValor: "+valores[i]);
+        }
     }
 
     public void Basico3() {
