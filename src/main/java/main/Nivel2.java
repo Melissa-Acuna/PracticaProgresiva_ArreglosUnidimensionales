@@ -4,36 +4,82 @@
  */
 package main;
 
+import javax.swing.JOptionPane;
+
 /**
  *
- * @author Melissa Acuña
- * Edith
+ * @author Melissa Acuña 
+ * Edith Torres
  */
 public class Nivel2 { //RECORRIDOS Y ACUMULACIÓN
-    
-    public void BasicoIntermedio1 (){ /*Básico-Intermedio double Leer 8 números decimales y calcular el promedio general. Mostrar
+
+    public void BasicoIntermedio1() {
+        /*Básico-Intermedio double Leer 8 números decimales y calcular el promedio general. Mostrar
                                             el resultado con dos decimales.
                                             Promedio, double*/
-    
+
     }
-    
-    public void BasicoIntermedio2 (){ /*Básico-Intermedio boolean Usar un arreglo de 20 valores booleanos para representar
+
+    public void BasicoIntermedio2() {
+        /*Básico-Intermedio boolean Usar un arreglo de 20 valores booleanos para representar
                                             asistencia. Calcular cuántos asistieron, cuántos faltaron y el
                                             porcentaje de asistencia.
                                             boolean[], conteo, porcentaje*/
-    
+
     }
-    
-    public void BasicoIntermedio3 (){ /*Básico-Intermedio char Dado un arreglo de caracteres, contar cuántas vocales contiene.
+
+    public void BasicoIntermedio3() {
+        /*Básico-Intermedio char Dado un arreglo de caracteres, contar cuántas vocales contiene.
                                             char[], búsqueda por condición*/
-    
+        char[] array = {'a', 'a', 'a', 'o', 'i', 'o', 'f', 'r'};
+        int contador = 0;
+        String resultado = " ";
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 'a') {
+                contador++;
+            }
+            if (array[i] == 'e') {
+                contador++;
+            }
+            if (array[i] == 'i') {
+                contador++;
+            }
+            if (array[i] == 'o') {
+                contador++;
+            }
+            if (array[i] == 'u') {
+                contador++;
+            }
+        }
+        for (int i = 0; i < array.length; i++) {
+            resultado += " [ " + array[i] + " ] ";
+        }
+
+        JOptionPane.showMessageDialog(null, resultado + "\nTotal de vocales: " + contador);
     }
-    
-    public void BasicoIntermedio4 (){ /*Intermedio int Leer 15 números. Mostrar la suma de los elementos ubicados en
+
+    public void BasicoIntermedio4() {
+        /*Intermedio int Leer 15 números. Mostrar la suma de los elementos ubicados en
                                             índices pares y, por separado, la suma de los ubicados en índices
                                             impares.
                                             Trabajo con índices*/
-    
+        int[] numeros = {4, 8, 15, 16, 23, 42, 50, 3, 76, 12, 34, 56, 9, 1, 6};
+        int SumarPares = 0;
+        int SumarImpares = 0;
+        String indice = "";
+        for (int i = 0; i < numeros.length; i++) {
+
+            indice += "Posicion " + i + ":" + numeros[i] + "\n";
+
+            if (i % 2 == 0) {
+                SumarPares += numeros[i];
+            } else {
+                SumarImpares += numeros[i];
+            }
+        }
+        JOptionPane.showMessageDialog(null, indice);
+        JOptionPane.showMessageDialog(null, "Suma de índices pares: " + SumarPares + "\n"
+                + "Suma de índices impares: " + SumarImpares);
     }
-    
+
 }
