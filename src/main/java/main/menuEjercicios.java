@@ -8,8 +8,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Melissa Acuña 
- * Edith Torres
+ * @author Melissa Acuña Edith Torres
  */
 public class menuEjercicios {
 
@@ -147,10 +146,10 @@ public class menuEjercicios {
                                 nivel4.IntermedioAlto2();
                                 break;
                             case 3:
-
+                                nivel4.IntermedioAlto3();
                                 break;
                             case 4:
-
+                                nivel4.IntermedioAlto4();
                                 break;
                             case 5:
                                 JOptionPane.showMessageDialog(null, "REGRESANDO AL MENÚ PRINCIPAL");
@@ -177,8 +176,10 @@ public class menuEjercicios {
                                 nivel5.Avanzado2();
                                 break;
                             case 3:
+                                nivel5.Avanzado3();
                                 break;
                             case 4:
+                                nivel5.Avanzado4();
                                 break;
                             case 5:
                                 JOptionPane.showMessageDialog(null, "REGRESANDO AL MENÚ PRINCIPAL");
