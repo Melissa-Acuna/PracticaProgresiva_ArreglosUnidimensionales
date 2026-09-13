@@ -50,8 +50,10 @@ public class menuEjercicios {
                                 + "\n5. Regresar al menu principal"));
                         switch (optLVL1) {
                             case 1:
+                                nivel1.Basico1();
                                 break;
                             case 2:
+                                nivel1.Basico2();
                                 break;
                             case 3:
                                 nivel1.Basico3();
@@ -78,8 +80,10 @@ public class menuEjercicios {
                                 + "\n5. Regresar al menu principal"));
                         switch (optLVL2) {
                             case 1:
+                                nivel2.BasicoIntermedio1();
                                 break;
                             case 2:
+                                nivel2.BasicoIntermedio2();
                                 break;
                             case 3:
                                 nivel2.BasicoIntermedio3();
@@ -106,8 +110,10 @@ public class menuEjercicios {
                                 + "\n5. Regresar al menu principal"));
                         switch (optLVL3) {
                             case 1:
+                                nivel3.Intermedio1();
                                 break;
                             case 2:
+                                nivel3.Intermedio2();
                                 break;
                             case 3:
                                 nivel3.Intermedio3();
@@ -134,10 +140,10 @@ public class menuEjercicios {
                                 + "\n5. Regresar al menu principal"));
                         switch (optLVL4) {
                             case 1:
-
+                                nivel4.IntermedioAlto1();
                                 break;
                             case 2:
-
+                                nivel4.IntermedioAlto2();
                                 break;
                             case 3:
                                 nivel4.IntermedioAlto3();
@@ -164,8 +170,10 @@ public class menuEjercicios {
                                 + "\n5. Regresar al menu principal"));
                         switch (optLVL5) {
                             case 1:
+                                nivel5.Avanzado1();
                                 break;
                             case 2:
+                                nivel5.Avanzado2();
                                 break;
                             case 3:
                                 nivel5.Avanzado3();

@@ -8,8 +8,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Melissa Acuña 
- * Edith Torres
+ * @author Melissa Acuña Edith Torres
  */
 public class Nivel2 { //RECORRIDOS Y ACUMULACIÓN
 
@@ -17,7 +16,13 @@ public class Nivel2 { //RECORRIDOS Y ACUMULACIÓN
         /*Básico-Intermedio double Leer 8 números decimales y calcular el promedio general. Mostrar
                                             el resultado con dos decimales.
                                             Promedio, double*/
-
+        double[] media = {5.5, 7.8, 9.1, 6.5, 3.2, 0.3, 8.7, 1.4};
+        double suma = 0.0;
+        for (double i : media) {
+            suma += i;
+        }
+        double promedio = suma / media.length;
+        JOptionPane.showMessageDialog(null, "El promedio es de: " + String.format("%.2f%n", promedio));
     }
 
     public void BasicoIntermedio2() {
@@ -25,6 +30,20 @@ public class Nivel2 { //RECORRIDOS Y ACUMULACIÓN
                                             asistencia. Calcular cuántos asistieron, cuántos faltaron y el
                                             porcentaje de asistencia.
                                             boolean[], conteo, porcentaje*/
+        boolean[] asistencia = {false, true, true, false, true, false, false, false, true, true, false, true, true, true, false, true, true, false, true, false};
+        int asistieron = 0;
+        int faltaron = 0;
+        for (int i = 0; i < asistencia.length; i++) {
+            if (asistencia[i]) {
+                asistieron++;
+            } else {
+                faltaron++;
+            }
+        }
+        double porcentajeAsistencia = ((double)asistieron / asistencia.length) * 100;
+        JOptionPane.showMessageDialog(null, "El porcentaje de asistencia es de: " + String.format("%.1f%n", porcentajeAsistencia)
+        +"\nCantidad de asistencia: "+asistieron
+        +"\nCantidad de faltantes: "+faltaron);
 
     }
 
