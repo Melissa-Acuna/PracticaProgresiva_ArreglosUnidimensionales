@@ -16,7 +16,16 @@ public class Nivel5 { //INTEGRACIÓN Y RETOS
         /*Avanzado int Crear dos arreglos de igual tamaño. Generar un tercer arreglo donde cada
                                     posición sea la suma de los elementos correspondientes de los dos arreglos originales.
                                     Procesamiento paralelo de arreglos*/
-
+        int [] primerArreglo = {2, 4, 6, 8, 10};
+        int [] segundoArreglo = {3, 6, 9, 12, 15};
+        int [] sumaArreglos = new int [primerArreglo.length];
+        String productoFinal = "";
+        for (int i = 0; i<primerArreglo.length; i++){
+            sumaArreglos [i] = primerArreglo [i] + segundoArreglo [i];
+            productoFinal += "["+i+"]"+sumaArreglos [i]+"\n";
+        }
+        JOptionPane.showMessageDialog (null, "El resultado de las sumas y el arreglo final es: \n"
+                +productoFinal);
     }
 
     public void Avanzado2() {
